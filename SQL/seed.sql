@@ -11,12 +11,13 @@ INSERT INTO users (
     experience,
     goals,
     availability_times,
-    bio
+    bio,
+    last_location
 )
 VALUES
-    ('gchacka@gmail.com', 'password', 'Gavin', 'Eldridge', TRUE, FALSE, ' ', ' ', ' ', ' ', ' '),
-    ('test@email.com', 'password', 'Test', 'User', FALSE, FALSE, ' ', ' ', ' ', ' ', ' '),
-    ('therapist@email.com', 'password', 'Test', 'Therapist', FALSE, TRUE, ' ', ' ', ' ', ' ', ' ');
+    ('gchacka@gmail.com', 'password', 'Gavin', 'Eldridge', TRUE, FALSE, ' ', ' ', ' ', ' ', ' ', ' '),
+    ('test@email.com', 'password', 'Test', 'User', FALSE, FALSE, ' ', ' ', ' ', ' ', ' ', ' '),
+    ('therapist@email.com', 'password', 'Test', 'Therapist', FALSE, TRUE, ' ', ' ', ' ', ' ', ' ', ' ');
 
 
 INSERT INTO likes (

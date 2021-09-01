@@ -9,7 +9,8 @@ CREATE TABLE users (
     experience TEXT,
     goals TEXT,
     availability_times TEXT,
-    bio TEXT
+    bio TEXT,
+    last_location TEXT
 );
 
 -- CREATE TABLE therapist_user (

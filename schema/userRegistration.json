@@ -1,0 +1,192 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "user": {
+                "email": "testuser@email.com",
+                "firstName": "John",
+                "lastName": "Doe",
+                "password": "123Password!",
+                "isAdmin": false,
+                "isTherapist": true,
+                "insuranceDescription": "This is some info about my insurance plan",
+                "experience": "This is some info about my last therapy experience",
+                "goals": "some goals of mine go here.",
+                "availableTimes": "I am free on Fridays",
+                "bio": "hello this is some stuff about myself",
+                "lastLocation": "-135434234, 3243443"
+            }
+        }
+    ],
+    "required": [
+        "user"
+    ],
+    "properties": {
+        "user": {
+            "$id": "#/properties/user",
+            "type": "object",
+            "title": "The user schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "email": "testuser@email.com",
+                    "firstName": "John",
+                    "lastName": "Doe",
+                    "password": "123Password!",
+                    "isAdmin": false,
+                    "isTherapist": true,
+                    "insuranceDescription": "This is some info about my insurance plan",
+                    "experience": "This is some info about my last therapy experience",
+                    "goals": "some goals of mine go here.",
+                    "availableTimes": "I am free on Fridays",
+                    "bio": "hello this is some stuff about myself",
+                    "lastLocation": "-135434234, 3243443"
+                }
+            ],
+            "required": [
+                "email",
+                "firstName",
+                "lastName",
+                "password",
+                "isAdmin",
+                "isTherapist",
+                "insuranceDescription",
+                "experience",
+                "goals",
+                "availableTimes",
+                "bio",
+                "lastLocation"
+            ],
+            "properties": {
+                "email": {
+                    "$id": "#/properties/user/properties/email",
+                    "type": "string",
+                    "title": "The email schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "testuser@email.com"
+                    ]
+                },
+                "firstName": {
+                    "$id": "#/properties/user/properties/firstName",
+                    "type": "string",
+                    "title": "The firstName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "John"
+                    ]
+                },
+                "lastName": {
+                    "$id": "#/properties/user/properties/lastName",
+                    "type": "string",
+                    "title": "The lastName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Doe"
+                    ]
+                },
+                "password": {
+                    "$id": "#/properties/user/properties/password",
+                    "type": "string",
+                    "title": "The password schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "123Password!"
+                    ]
+                },
+                "isAdmin": {
+                    "$id": "#/properties/user/properties/isAdmin",
+                    "type": "boolean",
+                    "title": "The isAdmin schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "isTherapist": {
+                    "$id": "#/properties/user/properties/isTherapist",
+                    "type": "boolean",
+                    "title": "The isTherapist schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "insuranceDescription": {
+                    "$id": "#/properties/user/properties/insuranceDescription",
+                    "type": "string",
+                    "title": "The insuranceDescription schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "This is some info about my insurance plan"
+                    ]
+                },
+                "experience": {
+                    "$id": "#/properties/user/properties/experience",
+                    "type": "string",
+                    "title": "The experience schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "This is some info about my last therapy experience"
+                    ]
+                },
+                "goals": {
+                    "$id": "#/properties/user/properties/goals",
+                    "type": "string",
+                    "title": "The goals schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "some goals of mine go here."
+                    ]
+                },
+                "availableTimes": {
+                    "$id": "#/properties/user/properties/availableTimes",
+                    "type": "string",
+                    "title": "The availableTimes schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "I am free on Fridays"
+                    ]
+                },
+                "bio": {
+                    "$id": "#/properties/user/properties/bio",
+                    "type": "string",
+                    "title": "The bio schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "hello this is some stuff about myself"
+                    ]
+                },
+                "lastLocation": {
+                    "$id": "#/properties/user/properties/lastLocation",
+                    "type": "string",
+                    "title": "The lastLocation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "-135434234, 3243443"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
